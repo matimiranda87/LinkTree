@@ -1118,7 +1118,6 @@ ul li a:hover{
     /* MENU NORMAL */
 
     ul{
-        background-color: red;
         flex-direction: row;
 
         justify-content: flex-end;
@@ -1561,7 +1560,6 @@ ul li a:hover{
     }
 
     ul{
-        background-color:chocolate ;
         justify-content: flex-end;
         padding-right: 70px;
         height: 80px;
