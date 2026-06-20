@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas en Recuperación</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/logo-ONG.png" type="image/png"> 
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li class="logo"><a href="index.html"><img src="imagenes/logo-ONG.png" width="50" height="50" alt="Logo ONG"></a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="adopciones.html">Adopciones</a></li>
+            <li><a href="hogar-temporal.html">Hogar Temporal</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+
+            <li class="btn-menu-donar">
+                <a href="donaciones.html">❤ Donar</a>
+            </li>
+            <button class="menu-toggle" onclick="abrirMenu()">☰</button>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="blog-proyecto">
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagenes/recuperacion-mobile.jpg">
+            <source media="(max-width: 992px)" srcset="imagenes/recuperacion-tablet.jpg">
+            <img src="imagenes/recuperacion-web.jpg" alt="Perro recibiendo atención">
+        </picture>
+
+        <article>
+            <h1>Patitas en Recuperación</h1>
+
+            <p>
+                Este proyecto acompaña a perros rescatados que necesitan atención veterinaria,
+                alimentación especial y cuidados antes de estar listos para la adopción.
+            </p>
+
+            <p>
+                Muchos llegan con miedo, heridas o desnutrición. Nuestro objetivo es ayudarlos
+                a recuperar su salud física y emocional en un ambiente seguro.
+            </p>
+
+            <p>
+                Gracias a los hogares temporales, cada perro puede volver a confiar, socializar
+                y prepararse para encontrar una familia definitiva.
+            </p>
+
+            <a href="contacto.html" class="btn-blog">Quiero ayudar</a>
+        </article>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mininos Seguros</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/logo-ONG.png" type="image/png">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li class="logo"><a href="index.html"><img src="imagenes/logo-ONG.png" width="50" height="50" alt="Logo ONG"></a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="adopciones.html">Adopciones</a></li>
+            <li><a href="hogar-temporal.html">Hogar Temporal</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+
+            <li class="btn-menu-donar">
+                <a href="donaciones.html">❤ Donar</a>
+            </li>
+            <button class="menu-toggle" onclick="abrirMenu()">☰</button>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="blog-proyecto">
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagenes/michis-mobile.jpg">
+            <source media="(max-width: 992px)" srcset="imagenes/michis-tablet.jpg">
+            <img src="imagenes/michis-web.jpg" alt="Gatitos rescatados">
+        </picture>
+
+        <article>
+            <h1>Mininos Seguros</h1>
+
+            <p>
+                Mininos Seguros está pensado para gatos rescatados de la calle que necesitan
+                un espacio tranquilo mientras esperan una adopción responsable.
+            </p>
+
+            <p>
+                Los gatos suelen necesitar tiempo, paciencia y un ambiente calmo para adaptarse.
+                Por eso, los hogares temporales son fundamentales en su proceso.
+            </p>
+
+            <p>
+                Brindamos alimento, cuidado veterinario, socialización y protección hasta que
+                cada minino encuentre una familia que lo cuide para siempre.
+            </p>
+
+            <a href="contacto.html" class="btn-blog">Quiero colaborar</a>
+        </article>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

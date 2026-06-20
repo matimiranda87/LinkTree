@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familias que Transforman</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/logo-ONG.png" type="image/png">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li class="logo"><a href="index.html"><img src="imagenes/logo-ONG.png" width="50" height="50" alt="Logo ONG"></a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="adopciones.html">Adopciones</a></li>
+            <li><a href="hogar-temporal.html">Hogar Temporal</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+
+            <li class="btn-menu-donar">
+                <a href="donaciones.html">❤ Donar</a>
+            </li>
+            <button class="menu-toggle" onclick="abrirMenu()">☰</button>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="blog-proyecto">
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagenes/familias-mobile.jpg">
+            <source media="(max-width: 992px)" srcset="imagenes/familias-tablet.jpg">
+            <img src="imagenes/familias-web.jpg" alt="Familia con mascota adoptada">
+        </picture>
+
+        <article>
+            <h1>Familias que Transforman</h1>
+
+            <p>
+                Este proyecto cuenta historias de personas que abrieron las puertas de su casa
+                para acompañar a perros y gatos durante su camino hacia la adopción.
+            </p>
+
+            <p>
+                Ser hogar temporal no solo cambia la vida del animal: también transforma a la
+                familia que lo recibe, generando vínculos basados en el amor y la responsabilidad.
+            </p>
+
+            <p>
+                Cada historia demuestra que una acción solidaria puede convertirse en una nueva
+                oportunidad para quienes más lo necesitan.
+            </p>
+
+            <a href="adopciones.html" class="btn-blog">Ver adopciones</a>
+        </article>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

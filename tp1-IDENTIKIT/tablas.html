@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .uno{
+        background-color: aquamarine;
+    }
+    table{
+        background-color: rgb(43, 110, 226);
+    }
+    td{
+        border: 2px solid green;
+        border-radius: 50px;
+    }
+    th{
+         border: 2px solid green;
+        border-radius: 50px;
+    }
+    .img{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        opacity: 0.5;
+       filter: grayscale(100%) sepia(0.5);
+ 
+    }
+    .dos{
+        height: 600px;
+        background-color: chartreuse;
+        background-image: url("imagenes/foto-IG.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<body>
+    <section class="uno">
+        <table style="width: 800px; height: 500px; border: 10px solid black;" >
+            <tr>
+                <th colspan="3" style="width: 1000px; height: 500px;">
+                    encabezado de tabla
+                </th>
+            </tr>
+            <tr>
+                <th rowspan="2">
+                    fila 1 celda 1
+                </th>
+                <td>
+                    fila 1 celda 2
+                </td>
+                <td>
+                    <img src="imagenes/foto-IG.jpg" width="100" alt="logo de IG" srcset=""> 
+                    <p>texto</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    fila 2 celda 2
+                </td>
+                <td>
+                    fila 2 celda 3
+                </td>
+
+                
+            </tr>
+        </table>
+    </section>
+    <table>
+        <tr>
+            <td style="width: 300px; height: 300px; background-color: rgb(255, 0, 204);">
+                <img  class="img" src="imagenes/foto-IG.jpg" alt="">
+            </td>
+        </tr>
+    </table>
+    <section class="dos">
+      <h1>titulo de prueba </h1>
+    </section >
+</body>
+</html>

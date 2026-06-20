@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones - Huellas de Esperanza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/logo-ONG.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="index.html">
+                        <img src="imagenes/logo-ONG.png" width="50" height="50" alt="Logo ONG">
+                    </a>
+                </li>
+
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="adopciones.html">Adopciones</a></li>
+                <li><a href="hogar-temporal.html">Hogar Temporal</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+                <li class="btn-menu-donar">
+                    <a href="donaciones.html">❤ Donar</a>
+                </li>
+
+                <button class="menu-toggle" onclick="abrirMenu()">☰</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero-donaciones">
+
+            <h1>Tu ayuda transforma vidas 🐾</h1>
+
+            <p>
+                Cada donación nos permite alimentar, cuidar y brindar atención veterinaria
+                a perros y gatos rescatados.
+            </p>
+
+            <button class="btn-donar" onclick="abrirModalDonacion()">
+    Donar ahora
+</button>
+
+        </section>
+
+        <section class="destino-donaciones">
+
+            <h2>¿Qué hacemos con las donaciones?</h2>
+
+            <div class="cards-donaciones">
+
+                <article>
+                    <h3>🍖 Alimento</h3>
+                    <p>Compramos comida para perros y gatos rescatados.</p>
+                </article>
+
+                <article>
+                    <h3>🏥 Veterinaria</h3>
+                    <p>Cubrimos vacunas, controles, medicamentos y tratamientos.</p>
+                </article>
+
+                <article>
+                    <h3>🏠 Refugio</h3>
+                    <p>Mejoramos espacios seguros para animales en tránsito.</p>
+                </article>
+
+                <article>
+                    <h3>❤️ Recuperación</h3>
+                    <p>Acompañamos a cada animal hasta encontrar una familia.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/logo-ONG.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="#"><img src="imagenes/logo-ONG.png" width="50" height="50" alt=""></a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="adopciones.html">Adopciones</a></li>
+                <li><a href="hogar-temporal.html">Hogar Temporal</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+                <li class="btn-menu-donar">
+                    <a href="donaciones.html">❤ Donar</a>
+                </li>
+                <button class="menu-toggle" onclick="abrirMenu()">☰</button> 
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section class="galeria">
+
+            <div class="slides">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="imagenes/carrousel-gato2-mobile.avif">
+                    <source media="(max-width: 992px)" srcset="imagenes/carrousel-gato2-tablet.avif">
+                    <img src="imagenes/carrousel-gato2-web.avif" alt="Gato2" class="active">
+                </picture>
+                 <picture>
+                    <source media="(max-width: 600px)" srcset="imagenes/carrousel-perro1-mobile.avif">
+                    <source media="(max-width: 992px)" srcset="imagenes/carrousel-perro1-tablet.avif">
+                    <img src="imagenes/carrousel-perro1-web.avif" alt="Perro" class="active">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="imagenes/carrousel-gato1-mobile.avif">
+                    <source media="(max-width: 992px)" srcset="imagenes/carrousel-gato1-tablet.avif">
+                    <img src="imagenes/gato1-carrousel-web.webp" alt="Gato2" class="active">
+                </picture>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="imagenes/gatoPerro1-carrousel-mobile.jpg">
+                    <source media="(max-width: 992px)" srcset="imagenes/gatoPerro1-carrousel-tablet.jpg">
+                    <img src="imagenes/gatoPerro1-carrousel-web.jpg" alt="gatoPerro" class="active">
+                </picture>
+
+            </div>
+
+            <div class="texto-carrusel">
+
+                <h1>Huellas de Esperanza</h1>
+
+                <p>
+                    Rescatamos perros y gatos en situación de abandono
+                    para brindarles una nueva oportunidad.
+                </p>
+
+                <a href="#quienes-somos">Conocé nuestra historia</a>
+
+            </div>
+
+            <button id="botonAnt" onclick="anterior()"> ◀️ </button>
+            <button id="botonSig" onclick="siguiente()"> ▶️ </button>
+
+
+        </section>
+        <section class="quienes-somos" id="quienes-somos">
+
+            <div class="intro">
+
+                <img src="imagenes/logo-ONG.png" alt="Logo Huellas de Esperanza" class="intro-logo">
+
+                <div>
+                    <h2>¿Quiénes somos?</h2>
+
+                    <p>
+                        En Huellas de Esperanza somos una ONG dedicada al rescate, cuidado y adopción responsable de perros y gatos en situación de abandono. 
+                        Nuestro objetivo es brindarles refugio, alimento, atención veterinaria y una nueva oportunidad de encontrar una familia.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="tarjetas-adopcion">
+
+                <a href="adopciones.html" class="tarjeta">
+
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="imagenes/peluditos-mobile.avif">
+                        <source media="(max-width: 992px)" srcset="imagenes/peluditos-tablet.avif">
+                        <img src="imagenes/peluditos-web.avif" alt="Perros">
+                    </picture>
+
+                    <h3>🐶 Peluditos</h3>
+
+                </a>
+
+                <a href="adopciones.html" class="tarjeta">
+
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="imagenes/mininos-mobile.avif">
+                        <source media="(max-width: 992px)" srcset="imagenes/mininos-tablet.avif">
+                        <img src="imagenes/mininos-web.avif" alt="Gatos">
+                    </picture>
+
+                    <h3>🐱 Mininos</h3>
+
+                </a>
+
+            </div>
+
+        </section>
+        <section class="como-ayudar" id="donaciones">
+
+            <div class="ayuda-bloque">
+
+                <div class="ayuda-opciones">
+                    <h2>¿Cómo ayudar?</h2>
+
+                    <div class="botones-ayuda">
+                        <a href="#" onclick="openModalDonacion()">
+                         Donaciones
+                         </a>
+                        <a href="hogar-temporal.html">Hogar Temporal</a>
+                    </div>
+                </div>
+
+                <div class="ayuda-imagen">
+                    <img src="imagenes/gato-donacion.avif" alt="Ayuda animal">
+                </div>
+
+                <div class="ayuda-texto">
+                    <p>
+                        En Huellas de Esperanza estamos comprometidos con el bienestar de los animales en situación de calle y maltrato.
+                        Si quieres colaborar con nosotros, hay varias formas en las que puedes hacerlo: donar alimento, artículos para mascotas,
+                        participar como voluntario o brindar un hogar temporal.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+<!-- ===================================== -->
+<!-- NUESTRA MISION -->
+<!-- ===================================== -->
+
+        <section class="mision">
+
+            <div class="mision-bloque">
+
+                <div class="mision-imagen">
+                    <img src="imagenes/gato-mision.avif" alt="Gato rescatado">
+                </div>
+
+                <div class="mision-texto">
+                    <span>NO OLVIDEMOS</span>
+
+                    <h2>Nuestra misión</h2>
+
+                    <p>
+                        En Huellas de Esperanza creemos que todos los animales merecen amor, cuidado y una segunda oportunidad.
+                        Nuestra misión es rescatar perros y gatos en situación de abandono, brindarles un refugio seguro,
+                        atención veterinaria y acompañarlos hasta encontrar una familia responsable.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

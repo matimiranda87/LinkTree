@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopciones - Huellas de Esperanza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/logo-ONG.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="index.html">
+                        <img src="imagenes/logo-ONG.png" width="50" height="50" alt="Logo ONG">
+                    </a>
+                </li>
+
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="adopciones.html">Adopciones</a></li>
+                <li><a href="hogar-temporal.html">Hogar Temporal</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+                <li class="btn-menu-donar">
+                    <a href="donaciones.html">❤ Donar</a>
+                </li>
+
+                <button class="menu-toggle" onclick="abrirMenu()">☰</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero-adopciones">
+
+            <h1>Adoptá una nueva historia</h1>
+
+            <p>
+                Cada perro y gato merece una familia que le brinde amor,
+                cuidado y una segunda oportunidad.
+            </p>
+
+        </section>
+
+        <section class="pasos-adopcion">
+
+            <h2>Pasos para la adopción</h2>
+
+            <div class="pasos">
+
+                <article>
+                    <h3>1</h3>
+                    <p>Elegí un perro o gato que quieras conocer.</p>
+                </article>
+
+                <article>
+                    <h3>2</h3>
+                    <p>Completá el formulario con tus datos.</p>
+                </article>
+
+                <article>
+                    <h3>3</h3>
+                    <p>Nos contactamos para coordinar la entrevista.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="requisitos-adopcion">
+
+            <h2>Requisitos para adoptar</h2>
+
+            <div class="requisitos">
+
+                <div>Ser mayor de edad.</div>
+                <div>Contar con un hogar seguro.</div>
+                <div>Aceptar seguimiento post-adopción.</div>
+                <div>Comprometerse con el cuidado responsable.</div>
+
+            </div>
+
+            <section class="mascotas-adopcion">
+
+                <h2>Conocé a nuestros amigos</h2>
+
+                <div class="cards-mascotas">
+
+                    <!-- perro 1 -->
+                    <article class="mascota">
+                        <picture>
+                            <source media="(max-width:600px)"
+                                    srcset="imagenes/adopcion-perro-Rocky-mobile.jpg">
+
+                            <source media="(max-width:992px)"
+                                    srcset="imagenes/adopcion-perro-Rocky-tablet.jpg">
+
+                            <img src="imagenes/adopcion-perro-Rocky-web.jpg"
+                                alt="Rocky">
+                        </picture>
+
+                        <h3>Rocky</h3>
+                        <p>2 años • Muy juguetón</p>
+                        <a href="contacto.html" class="btn-adoptar">
+                            Quiero adoptarlo
+                        </a>
+                    </article>
+                    <!-- perro 2 -->
+                    <article class="mascota">
+                        <picture>
+                            <source media="(max-width:600px)"
+                                    srcset="imagenes/adopcion-perro-cachorros-mobile.jpg">
+
+                            <source media="(max-width:992px)"
+                                    srcset="imagenes/adopcion-perro-cachorros-tablet.jpg">
+
+                            <img src="imagenes/adopcion-perro-cachorros-web.jpg"
+                                alt="Cachorros">
+                        </picture>
+
+                        <h3>Cachorros</h3>
+                        <p>recién nacidos • Muy juguetones</p>
+                        <a href="contacto.html" class="btn-adoptar">
+                            Quiero adoptarlos
+                        </a>    
+                    </article>
+
+                    <!-- gato 1 -->
+                    <article class="mascota">
+                        <picture>
+                            <source media="(max-width:600px)"
+                                    srcset="imagenes/adopcion-gatos-luna-mobile.jpg">
+
+                            <source media="(max-width:992px)"
+                                    srcset="imagenes/adopcion-gatos-luna-tablet.jpg">
+
+                            <img src="imagenes/adopcion-gatos-luna-web.jpg"
+                                alt="Milo">
+                        </picture>
+
+                        <h3>Milo</h3>
+                        <p>1 año • Cariñoso y tranquilo</p>
+                            <a href="contacto.html" class="btn-adoptar">
+                                Quiero adoptarlo
+                            </a>
+                    </article>
+                    <!-- gato 2 -->
+                    <article class="mascota">
+                        <picture>
+                            <source media="(max-width:600px)"
+                                    srcset="imagenes/adopcion-gatos-muchos-mobile.jpg">
+
+                            <source media="(max-width:992px)"
+                                    srcset="imagenes/adopcion-gatos-muchos-tablet.jpg">
+
+                            <img src="imagenes/adopcion-gatos-muchos-web.jpg"
+                                alt="gatitos">
+                        </picture>
+                        
+                        <h3>gatitos</h3>
+                        <p>1 año • Cariñosos y tranquilos</p>
+                        <a href="contacto.html" class="btn-adoptar">
+                            Quiero adoptarlos
+                        </a>
+                    </article>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <section class="contacto-adopcion">
+
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagenes/perro-contacto-mobile.jpg">
+                <source media="(max-width: 992px)" srcset="imagenes/perro-contacto-tablet.jpg">
+                <img src="imagenes/perro-contacto-web.jpg" alt="Perro contacto">
+            </picture>
+
+            <form onsubmit="enviarSolicitudAdopcion(event)">
+
+                <h2>¿Querés adoptar?</h2>
+
+                <label>Nombre completo*</label>
+                <input type="text" placeholder="Tu nombre" required>
+
+                <label>Correo electrónico*</label>
+                <input type="email" placeholder="tuemail@email.com" required>
+
+                <label>Tipo de adopción*</label>
+                <select required>
+                    <option value="">Seleccioná una opción</option>
+                    <option>Quiero adoptar un perro</option>
+                    <option>Quiero adoptar un gato</option>
+                    <option>Quiero recibir más información</option>
+                </select>
+
+                <label>Mensaje*</label>
+                <textarea placeholder="Contanos por qué querés adoptar..." required></textarea>
+
+                <button type="submit">Enviar solicitud</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

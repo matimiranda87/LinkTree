@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+            box-sizing: content-box;
+  
+        } /*ponen margen cero por defecto a todo*/
+        div{
+            border: 25px solid black;
+            background-color: aqua;
+        }
+        li{
+            list-style-position: inside; /*las viñetas ponerla del lado de adentro del contenedor*/
+        }
+        ol .li .ul .li{
+            padding-left: 25 px;
+        }    
+    </style>
+
+</head>
+<body>
+    <ul style="width: 60; margin:0 auto;">
+        <h2>Ingredientes</h2>   
+        <img src ='imagenes/escudo 2022.png' width="50" style="float: right;">
+        <li>Cebolla</li>
+        <li>Tomate</li>
+        <li>Orégano</li>
+    </ul>
+    <ol>
+        <li>paso 1
+            <ul>
+                <li style="padding-left: 25px;">Aca seria el paso 1</li>
+                <li >Acá sería el paso 2</li>
+            </ul>
+        </li>
+        <li>paso 2</li>
+        <li>paso 3 </li>
+    </ol>
+    
+</body>
+</html>

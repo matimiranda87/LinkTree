@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/logo-ONG.png" type="image/png">
+</head>
+<body>
+    <form action="">
+        <!-- tenemos que relacionar los labels con los inputs  -->
+        <!-- el nombre del atributo "for" del label debe coincidir con el id del input correspondiente -->
+        <label for="nombre">Nombre:</label> <br><!-- El atributo "for" del label debe coincidir con el id del input correspondiente -->
+        <input type="text" id="nombre" name="nombre" required> <br> <!-- El atributo "required" hace que el campo sea obligatorio -->
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" required>Ingrese su mensaje aquí...</textarea><br>
+
+        <input type="radio" name="" id="html" value="html">
+        <label for="html">HTML</label>
+        <input type="radio" name="" id="css" value="css">
+        <label for="css">CSS</label>
+        
+        <br>
+        <input type="checkbox" id="vehiculos1" value="bicicleta">
+        <label for="vehiculos1">Bicicleta</label>
+         <input type="checkbox" id="vehiculos2" value="moto">
+        <label for="vehiculos2">Moto</label>
+        <br>
+
+        <label for="nacionalidad">Nacionalidad:</label>
+        <select  id="nacionalidad">
+            <option value="">Seleccionar...</option>
+            <option value="argentina">Argentina</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="chile">Chile</option>
+        </select> <br>
+
+        <input type="submit" value="Doná">
+
+
+        <button type="submit">Enviar Formulario</button>   
+    </form>
+</body>
+</html>
