@@ -1655,7 +1655,22 @@ ul li a:hover{
     }
 
     .footer-columna ul{
-        align-items:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    }
+
+    .footer-columna ul li{
+        width:100%;
+        text-align:center;
+        margin:0;
+        padding:0;
+    }
+
+    .footer-columna ul li a{
+        display:block;
     }
 
     .footer-columna h3{
