@@ -1190,6 +1190,29 @@ ul li a:hover{
     font-size:18px;
 }
 
+.footer-columna ul{
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:flex-start !important;
+    align-items:flex-start !important;
+    background:none !important;
+    height:auto !important;
+    padding:0 !important;
+}
+
+.footer-columna ul li{
+    display:block !important;
+    position:static !important;
+    transform:none !important;
+    margin:0 !important;
+    padding:0 !important;
+    height:auto !important;
+}
+
+.footer-columna ul li a{
+    color:white !important;
+}
+
 /********************************************************/
 /* CELULAR                                              */
 /*******************************************************/
@@ -1197,7 +1220,7 @@ ul li a:hover{
 
     /* MENU NORMAL */
 
-    ul{
+    nav ul{
         flex-direction: row;
         background-color: #7cf0c2;
         justify-content: flex-end;
@@ -1215,9 +1238,8 @@ ul li a:hover{
 
     /* MUESTRA BOTON */
 
-    button{
-
-        display: block;
+   .menu-toggle{
+    display:block;
     }
 
     /* MENU ABIERTO */
@@ -1662,19 +1684,19 @@ ul li a:hover{
         display: none;
     }
 
-    ul{
+    nav ul{
         justify-content: flex-end;
         background-color: #7cf0c2;    
         padding-right: 70px;
         height: 80px;
     }
 
-    ul li{
+    nav ul li{
 
         margin-right: 0;
     }
 
-    ul li a{
+    nav ul li a{
 
         font-size: 16px;
     }
