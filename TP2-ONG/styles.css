@@ -1109,6 +1109,86 @@ ul li a:hover{
     color: inherit;
 }
 
+/******************** FOOTER ********************/
+
+.footer-ong{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:40px;
+    padding:50px;
+    background-color:#243447;
+    color:white;
+}
+
+.footer-columna{
+    flex:1;
+}
+
+.footer-columna h3{
+    color:#72ddb4;
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+.footer-columna p{
+    line-height:1.6;
+    font-size:18px;
+}
+
+.footer-columna ul{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    gap:15px;
+
+    background:none;
+    height:auto;
+    padding:0;
+    margin:0;
+}
+
+.footer-columna ul li{
+    list-style:none;
+    margin:0;
+    padding:0;
+    height:auto;
+    display:block;
+}
+
+.footer-columna ul li:nth-child(1){
+    position:static;
+    transform:none;
+}
+
+.footer-columna a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.footer-columna a:hover{
+    color:#72ddb4;
+}
+
+.volver-arriba{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    border-radius:25px;
+    background:#72ddb4;
+    color:#243447 !important;
+}
+
+.footer-copy{
+    text-align:center;
+    background:#1b2735;
+    color:white;
+    padding:18px;
+    font-size:18px;
+}
 
 /********************************************************/
 /* CELULAR                                              */
@@ -1129,8 +1209,7 @@ ul li a:hover{
 
     /* OCULTA LINKS */
 
-    ul li:not(.logo){
-
+    nav ul li:not(.logo){
         display: none;
     }
 
@@ -1541,6 +1620,30 @@ ul li a:hover{
     .mascota h3{
         font-size: 24px;
     }
+
+    /*************footer***************/
+    .footer-ong{
+        flex-direction:column;
+        text-align:center;
+        padding:35px 20px;
+    }
+
+    .footer-columna{
+        width:100%;
+    }
+
+    .footer-columna ul{
+        align-items:center;
+    }
+
+    .footer-columna h3{
+        font-size:26px;
+    }
+
+    .footer-columna p,
+    .footer-columna a{
+        font-size:18px;
+    }
 }
 
 /* ===================================== */
@@ -1555,7 +1658,7 @@ ul li a:hover{
         display: block;
     }
 
-    ul li:not(.logo){
+        nav ul li:not(.logo){
         display: none;
     }
 
@@ -1905,6 +2008,27 @@ ul li a:hover{
 
     .mascota img{
         height: 220px;
+    }
+
+    /*******footer*********/
+    .footer-ong{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:35px;
+    }
+
+    .footer-columna{
+        width:45%;
+        flex:none;
+    }
+
+    .footer-columna:last-child{
+        width:100%;
+        text-align:center;
+    }
+
+    .footer-columna ul{
+        align-items:flex-start;
     }
 }
 
