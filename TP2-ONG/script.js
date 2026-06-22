@@ -50,11 +50,11 @@ function anterior() { // Resta 1 a la posición actual para mostrar la imagen an
 
 function abrirModalDonacion(){
 
-    let modal = document.createElement("div");
+    let modal = document.createElement("div"); // Crea un nuevo elemento <div> para el modal
 
-    modal.classList.add("modal-impacto");
+    modal.classList.add("modal-impacto");// Agrega la clase "modal-impacto" al nuevo elemento para aplicar estilos
 
-    modal.innerHTML = `
+    modal.innerHTML = ` 
 
         <div class="contenido-impacto">
 
@@ -65,7 +65,7 @@ function abrirModalDonacion(){
                 a nuestros perros y gatos rescatados.
             </p>
 
-            <input type="number" id="montoDonacion" placeholder="Ingresá un monto en pesos">
+            <input type="number" id="montoDonacion" placeholder="Ingresá un monto en pesos"> 
 
             <button class="btn-calcular" id="calcularImpacto">
                 Calcular impacto
@@ -84,15 +84,15 @@ function abrirModalDonacion(){
         </div>
     `;
 
-    document.body.appendChild(modal);
+    document.body.appendChild(modal); // Agrega el modal al final del cuerpo del documento para que sea visible en la página
 
-    let inputMonto = modal.querySelector("#montoDonacion");
-    let botonCalcular = modal.querySelector("#calcularImpacto");
-    let resultadoImpacto = modal.querySelector("#resultadoImpacto");
-    let botonHacerDonacion = modal.querySelector("#hacerDonacion");
-    let botonCerrar = modal.querySelector("#cerrarModal");
+    let inputMonto = modal.querySelector("#montoDonacion"); // Selecciona el campo de entrada para el monto de la donación dentro del modal
+    let botonCalcular = modal.querySelector("#calcularImpacto"); // Selecciona el botón para calcular el impacto dentro del modal
+    let resultadoImpacto = modal.querySelector("#resultadoImpacto");// Selecciona el elemento donde se mostrará el resultado del impacto dentro del modal    
+    let botonHacerDonacion = modal.querySelector("#hacerDonacion");// Selecciona el botón para confirmar la donación dentro del modal
+    let botonCerrar = modal.querySelector("#cerrarModal");// Selecciona el botón para cerrar el modal dentro del modal
 
-    botonCalcular.addEventListener("click", function(){
+    botonCalcular.addEventListener("click", function(){ // Agrega un evento de clic al botón de calcular impacto
 
         let monto = Number(inputMonto.value);
 
